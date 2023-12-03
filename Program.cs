@@ -15,10 +15,10 @@ var provider = builder.Services.BuildServiceProvider();
 var blogService = provider.GetService<BlogService>();
 
 // 登録
-await blogService.Insert(new Blog { Url = "aaa.com", Rating = 10 });
+await blogService.Insert(new Blog { Url = "aaa.com" });
 
 // 更新
-await blogService.Update(new Blog { BlogId = 2, Url = "bbb.com", Rating = 4 });
+await blogService.Update(new Blog { BlogId = 2, Url = "bbb.com" });
 
 // 削除
 await blogService.Delete(2);

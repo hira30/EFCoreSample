@@ -15,14 +15,14 @@ namespace EFCoreSample
         {
             _context.Blogs.Add(blog);
             await _context.SaveChangesAsync();
-            Console.WriteLine($"ブログを登録しました！　BlogId：{blog.BlogId}, URL：{blog.Url}, Rating: {blog.Rating}");
+            Console.WriteLine($"ブログを登録しました！　BlogId：{blog.BlogId}, URL：{blog.Url}");
         }
 
         public async Task Update(Blog blog) 
         {
             _context.Entry(blog).State = EntityState.Modified;
             await _context.SaveChangesAsync();
-            Console.WriteLine($"ブログを更新しました！　BlogId：{blog.BlogId}, URL：{blog.Url}, Rating: {blog.Rating}");
+            Console.WriteLine($"ブログを更新しました！　BlogId：{blog.BlogId}, URL：{blog.Url}");
         }
 
         public async Task Delete(int blogId) 
@@ -30,7 +30,7 @@ namespace EFCoreSample
             var blog = await _context.Blogs.FindAsync(blogId);
             _context.Blogs.Remove(blog);
             await _context.SaveChangesAsync();
-            Console.WriteLine($"ブログを削除しました！　BlogId：{blog.BlogId}, URL：{blog.Url}, Rating: {blog.Rating}");
+            Console.WriteLine($"ブログを削除しました！　BlogId：{blog.BlogId}, URL：{blog.Url}");
         }
 
         public async Task GetAll() 
@@ -39,7 +39,7 @@ namespace EFCoreSample
 
             foreach (var blog in blogs)
             {
-                Console.WriteLine($"BlogId：{blog.BlogId}, URL：{blog.Url}, Rating: {blog.Rating}");
+                Console.WriteLine($"BlogId：{blog.BlogId}, URL：{blog.Url}");
             }
         }
 
