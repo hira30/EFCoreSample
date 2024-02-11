@@ -2,16 +2,15 @@
 
 namespace MySQLCrudSample
 {
-    internal class BloggingContext : DbContext
+    internal class TodoContext : DbContext
     {
-        public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Post> Posts { get; set; }
+        public DbSet<Todo> Todos { get; set; }
 
         // 接続文字列
-        readonly string connectionString = "server=localhost;database=my_db;user=root;password=1234;";
+        readonly string connectionString = "server=localhost;database=sample_db;user=root;password=<パスワード>;";
 
         // MySQLのバージョン
-        readonly MySqlServerVersion serverVersion = new(new Version(8, 3));
+        readonly MySqlServerVersion serverVersion = new(new Version(8, 0, 36));
 
         // DBコンテキストの設定
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
