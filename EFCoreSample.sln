@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLServerCrudSample", "SQLS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionSample", "TransactionSample\TransactionSample.csproj", "{997B6EB8-1D57-43F7-8910-4E2BC1A5690E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySQLCrudSample", "MySQLCrudSample\MySQLCrudSample.csproj", "{1A32A6C3-0BBF-46BD-A3A9-36E660A5EC84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQLCurdSample", "PostgreSQLApp\PostgreSQLCurdSample.csproj", "{A3D21006-6DBC-415D-803F-8B8B2A48950C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{997B6EB8-1D57-43F7-8910-4E2BC1A5690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997B6EB8-1D57-43F7-8910-4E2BC1A5690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997B6EB8-1D57-43F7-8910-4E2BC1A5690E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A32A6C3-0BBF-46BD-A3A9-36E660A5EC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A32A6C3-0BBF-46BD-A3A9-36E660A5EC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A32A6C3-0BBF-46BD-A3A9-36E660A5EC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A32A6C3-0BBF-46BD-A3A9-36E660A5EC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D21006-6DBC-415D-803F-8B8B2A48950C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D21006-6DBC-415D-803F-8B8B2A48950C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D21006-6DBC-415D-803F-8B8B2A48950C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D21006-6DBC-415D-803F-8B8B2A48950C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
